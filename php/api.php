@@ -1,6 +1,6 @@
 <?php
 // we include the connexion file for database connection
-require_once 'connexion.php';
+require_once '../php/connexion.php';
 
 try {
     // The $pdo variable comes from connexion.php

@@ -9,7 +9,7 @@ function chargerDonnees() {
     document.getElementById('resultat').innerHTML = "<p>⏳ Chargement de la collection en cours...</p>";
     console.log("Chargement en cours...");
 
-    fetch('api.php')
+    fetch('php/api.php')
         .then(response => {
             if (!response.ok) throw new Error('Erreur réseau');
             return response.json();
