@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ma Collection Lego Star Wars</title>
+    <link rel="stylesheet" href="style.css?v=2">
+
+</head>
+
+<body>
+
+    <h1>Collection Lego Star Wars</h1>
+
+    <div class="controles">
+        <input type="text" id="recherche" placeholder="Rechercher (nom ou réf)...">
+
+        <select id="tri">
+            <option value="defaut">-- Trier par --</option>
+            <option value="prix_croissant">Prix : - cher au + cher</option>
+            <option value="prix_decroissant">Prix : + cher au - cher</option>
+            <option value="nom_az">Nom : A - Z</option>
+            <option value="annee_desc">Année décroissante</option>
+            <option value="annee_asc">Année croissante</option>
+        </select>
+
+        <label>
+            <input type="checkbox" id="filtrePossede">
+            possédé
+        </label>
+        <label>
+            <input type="checkbox" id="filtreNoPossede">
+            manquant
+        </label>
+
+        <button id="btnCharger">Recharger l'API</button>
+    </div>
+
+    <div id="resultat"></div>
+
+    <script src="script.js?v=2"></script>
+
+</body>
+
+</html>
